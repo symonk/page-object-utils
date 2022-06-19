@@ -3,7 +3,7 @@ from functools import partial
 from selenium.webdriver.common.by import By
 
 
-class AntiStale:
+class ElementProperty:
     """"""
 
     def __init__(self, by: By, locator: str, many: bool = False) -> None:
@@ -29,5 +29,5 @@ class AntiStale:
         setattr(obj, self.private_name, value)
 
 
-find = AntiStale
+find = ElementProperty
 find_all = partial(find, many=True)

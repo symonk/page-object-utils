@@ -1,6 +1,6 @@
 
 [tool.poetry]
-name = "selenium_annotate"
+name = "page_object_utils"
 version = "0.1.0"
 description = "Automatically refind webelements on attribute lookup"
 authors = ["symonk <jackofspaces@gmail.com>"]
