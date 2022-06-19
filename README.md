@@ -34,7 +34,7 @@ class BingPage:
 
 -----
 
-#### Build in Page Readiness
+#### Built in Page Readiness
 -----------------------------
 
 Automatically wait until a page has met some sort of readiness predicate, simply
