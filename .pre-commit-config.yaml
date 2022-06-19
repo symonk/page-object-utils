@@ -28,7 +28,7 @@ repos:
     rev: v0.961
     hooks:
       - id: mypy
-        files: selenium-annotate/
+        files: selenium_annotate/
   - repo: https://github.com/PyCQA/flake8
     rev: 9f608813b80caf5a966e44d4bfb5e032159eb3e2
     hooks:
