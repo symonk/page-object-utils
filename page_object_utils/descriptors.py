@@ -3,7 +3,7 @@ from functools import partial
 from selenium.webdriver.common.by import By
 
 
-class ElementProperty:
+class ElementContainer:
     """"""
 
     def __init__(self, by: By, locator: str, many: bool = False) -> None:
@@ -29,5 +29,5 @@ class ElementProperty:
         setattr(obj, self.private_name, value)
 
 
-find = ElementProperty
+find = ElementContainer
 find_all = partial(find, many=True)
