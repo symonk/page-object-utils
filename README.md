@@ -3,9 +3,12 @@
 A Lightweight utility library that offers an assortment of page object utilities to make writing
 and maintaining selenium code easier.
 
+Page Object Utils is currently in very early alpha, it is not fit for use - please refrain from opening
+issues as at present most things are placeholder and or dummy implementations.
+
+
 #### Automatic Relocation on lookup
 ------------------------------------
-
 No more stale elements, descriptor protocol backed element lookups happen implicitly and automatically
 when accessing an element.  This keeps tests more accurate and prevents staleness.
 
@@ -28,6 +31,8 @@ class BingPage:
         self.search_box.send_keys(term)
         self.search_button.click()
 ```
+
+-----
 
 #### Build in Page Readiness
 -----------------------------
