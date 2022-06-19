@@ -1,2 +1,4 @@
 # page-object-utils
-Automatically re find web elements on attribute access using simple descriptors
+
+A Lightweight utility library that offers an assortment of page object utilities to make writing
+and maintaining selenium code easier.
