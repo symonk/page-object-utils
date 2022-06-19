@@ -29,8 +29,8 @@ class BingPage:
         self.search_button.click()
 ```
 
-#### Page ready callbacks & polling
-------------------------------------
+#### Build in Page Readiness
+-----------------------------
 
 Automatically wait until a page has met some sort of readiness predicate, simply
 decorate any method with `@ready`.  Let's build on the previous example.  Here we
