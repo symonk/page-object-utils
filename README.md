@@ -46,25 +46,24 @@ utils will wait until this predicate is true automatically before continuing:
 ```python
 from page_object_utils import Relocatable
 from page_object_utils import Page
-from page_object_utils import ready
+from page_object_utils import loaded
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
 
-@Page
-class BingPage:
+class BingPage(Page):
     """A simple page object that demonstrates the use of element containers."""
 
     search_box: WebElement = Relocatable(By.ID, "sb_form_q")
     search_button: WebElement = Relocatable(By.ID, "search_icon")
 
-    @ready
+    @loaded
     def _(self) -> bool:
         """Any predicate you desire."""
         return self.driver.url == "https://www.bing.com"
 
     def __init__(self, driver):
-        self.driver = driver
+        super().__init__(driver)
 
     def perform_search(self, term: str) -> ...:
         self.search_box.send_keys(term)
